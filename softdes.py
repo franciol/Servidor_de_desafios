@@ -73,9 +73,9 @@ def get_user_quiz(userid, quizid):
     """Pega o quiz do usuário no banco de dados"""
     conn = sqlite3.connect(DBNAME)
     cursor = conn.cursor()
-    cursor.execute(
-        "SELECT sent,answer,result from USERQUIZ where userthe_identification= '{0}' and quizthe_identification= {1} order by sent desc"
-        .format(userid, quizid))
+    cursor.execute("""SELECT sent,answer,result from USERQUIZ 
+        where userthe_identification= '{0}' and quizthe_identification= {1} order by sent desc"""
+                   .format(userid, quizid))
     info = [reg for reg in cursor.fetchall()]
     conn.close()
     return info
@@ -147,7 +147,7 @@ APP.secret_key = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?TX'
 def main():
     """Rotina de acionar o banco de dados"""
     msg = ''
-    p = 1
+    ponto_p = 1
     challenges = get_quizes(AUTH.username())
     sent = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
@@ -156,11 +156,11 @@ def main():
         quiz = get_quiz(the_identification, AUTH.username())
         if len(quiz) == 0:
             msg = "Boa tentativa, mas não vai dar certo!"
-            p = 2
+            ponto_p = 2
             return render_template('index.html',
                                    username=AUTH.username(),
                                    challenges=challenges,
-                                   p=p,
+                                   ponto_p=ponto_p,
                                    msg=msg)
 
         quiz = quiz[0]
@@ -199,22 +199,22 @@ def main():
 
     if len(challenges) == 0:
         msg = "Ainda não há desafios! Volte mais tarde."
-        p = 2
+        ponto_p = 2
         return render_template('index.html',
                                username=AUTH.username(),
                                challenges=challenges,
-                               p=p,
+                               ponto_p=ponto_p,
                                msg=msg)
 
     quiz = get_quiz(the_identification, AUTH.username())
 
     if len(quiz) == 0:
         msg = "Oops... Desafio invalido!"
-        p = 2
+        ponto_p = 2
         return render_template('index.html',
                                username=AUTH.username(),
                                challenges=challenges,
-                               p=p,
+                               ponto_p=ponto_p,
                                msg=msg)
 
     answers = get_user_quiz(AUTH.username(), the_identification)
@@ -225,7 +225,7 @@ def main():
                            quiz=quiz[0],
                            e=(sent > quiz[0][2]),
                            answers=answers,
-                           p=p,
+                           ponto_p=ponto_p,
                            msg=msg,
                            expi=converte_data(quiz[0][2]))
 
@@ -239,34 +239,35 @@ def change():
         nova = request.form['new']
         repet = request.form['again']
 
-        p = 1
+        ponto_p = 1
         msg = ''
         if nova != repet:
             msg = 'As novas senhas nao batem'
-            p = 3
+            ponto_p = 3
         elif get_info(AUTH.username()) != hashlib.md5(
                 velha.encode()).hexdigest():
             msg = 'A senha antiga nao confere'
-            p = 3
+            ponto_p = 3
         else:
             set_info(hashlib.md5(nova.encode()).hexdigest(), AUTH.username())
             msg = 'Senha alterada com sucesso'
-            p = 3
+            ponto_p = 3
     else:
         msg = ''
-        p = 3
+        ponto_p = 3
 
     return render_template('index.html',
                            username=AUTH.username(),
                            challenges=get_quizes(AUTH.username()),
-                           p=p,
+                           ponto_p=ponto_p,
                            msg=msg)
 
 
 @APP.route('/logout')
 def logout():
     """Faz logout"""
-    return render_template('index.html', p=2, msg="Logout com sucesso"), 401
+    return render_template('index.html', ponto_p=2,
+                           msg="Logout com sucesso"), 401
 
 
 @AUTH.get_password
