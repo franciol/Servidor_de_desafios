@@ -1,5 +1,12 @@
 site_name: Servidor de Desafios
 
+nav: 
+  - Home: index.md
+  - Aluno: alunos.md
+  - Professor: professores.md
+  - Guia de Desenvolvimento: desenvolvimento.md
+  - API: api.md
+
 extra_css:
   - custom.css
   
