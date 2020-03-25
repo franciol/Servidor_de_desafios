@@ -1,1 +1,5 @@
 site_name: Servidor de Desafios
+
+extra_css:
+  - custom.css
+  
