@@ -1,51 +1,54 @@
-# Lectos certamina fecere rettulit obruit
+# API do Servidor de Desafios
+Esta documentação lista as funções existentes no Servidor de Desafios de Design de Software. 
 
-## Morisque Aiax vox trahens tamen
+## adduser.py
+Adiciona novo usuário ao quiz.db para cada usuário no arquivo users.csv.
 
-Lorem markdownum abit edidit **avidissima** gaudia, hausto nec incipit tota. Lux
-cava canentis, auxiliumque humo. Quas aera, inambitiosa causa conantesque ipse
-nodosaque, ut iussae places sub domus. Me balatum fulgentia sertaque rursus.
+### add_user(user, pwd, tipe)
+Adiciona novo usuário ao quiz.db, faz commit das mudanças e fecha a conexão.
 
-## Ut venae quod
+## desafio.py
+Arquivo a ser enviado ao sistema.
 
-Expetit pectoraque sentit. Elige prius, dum omnibus a in voce laude, spectans a
-comis vestrae. Moror sua celanda modo. Viso fata exclamant deum precatur eurus
-conscendit Phoebes cretus, et viva, sude iam?
+### desafio1(number)
+Função que retorna o valor encontrado.
 
-## Sola ullas ut fraudem tum eliso possemque
+## softdes.py
+Software desenvolvido pelo professor Raul Ikeda para a disciplina Design de Software como servidor de desafios. Considere este o algoritmo Python principal do Servidor de Desafios. Abaixo, listadas as funções disponíveis.
 
-Comites metuunt *creatus*! Orbes cogor **ambustique conveniens vocabula**
-vestigia fluminis. Cui fugavi ingratus, mihi dixit ne idque bracchia thalamos.
+### lambda_handler(event, context)
+Lida com o lambda. Dentro dele, há a função not_equals(first, second) que é utilizada para lidar com o lambda. Em condições normais de temperatura e pressão, você não deve utilizar esta função explicitamente.
 
-> [Poterit undas](http://nec.io/), modo fere: peperisse est corpore Peleus iram
-> figuras remansit vivit, Haec. Currum festum lanificae Latias cupidi; mox tamen
-> nomina [grata](http://est.com/), ora ministrarum adest fumida. Incunabula
-> movit haesit. Frugum in inrumpere summa [ipsis
-> turpe](http://ardentoris.org/minorin) Iuppiter: qui omnes montibus te
-> quotiens. Semeles rurigenae aquarum fossae [limen et
-> ituros](http://www.tam.org/) trabesque notae; e crines poterit vestem; caelum,
-> senectus.
+### converteData(orig)
+Função de conversão de datas para tradução. Em condições normais de temperatura e função, você não deve utilizar esta função explicitamente.
 
-## Vesana dona aer huc
+### get_quizer(user)
+Pega todos os quizes de um usuário específico.
 
-Pressit paulatimque dulce morte fessa nec sub bracchia Psecas? Arva pelagi
-silvas resupinus veloque prius ne numina bacis Interea, relinquit.
+### get_user_quiz(user_id, quiz_id)
+Pega um quiz específico de um usuário específico.
 
-> Per Luna aliis quoque. Poena tamen, adesset dic, *nais* quoque rursus,
-> plangore! Tectus his, sis peperisse ducentem, barbam tecta patiente praebuit,
-> Venerem canam, tu.
+### set_user_quiz(userid, quizid, sent, answer, result)
+Insere no banco de dados a resposta enviada por um usuário para um quiz. 
 
-## Radix fecit fures relinquunt quidque ablata laetus
+### get_quiz(id, user)
+Pega o quiz de um usuário no banco de dados.
 
-Sonantem Laetitia per; lapides nec [in
-ventis](http://tamenaequora.net/tyronest.html) hiemalibus quae insequitur
-profusis totidemque ab pudori, Pomona. Non furit agro recurvis, erat abeunt
-promittis velit. Nec manu, Interea sed stabula et tenens pugnavimus instar
-Cartheia cruribus. Vires situs pollice mihi pharetram crimen humanas patruelis
-semper, et natam.
+### set_info(pwd, user)
+Estabelece ou atualiza a senha de login um usuário no banco de dados.
 
-Virum habebat texebas glorior est ventis est mihi manare ad gente manibus
-torquere morte annis, iubent nox, per. Imbres defendite levi milia iuveni utque
-iuvenaliter: [ratem deserit ubi](http://mortales-honorem.io/teste.php). Satum
-nec subcrescit poterat sit! Silices per margine albentia fallis, doceo caput,
-erigor cum.
+### get_info(user)
+Mostra os dados de um usuário no banco de dados.
+
+### change(void)
+Altera a senha de um usuário, solicitando a senha antiga, a senha nova e uma confirmação da senha nova. Altera se a senha antiga for correta e se a confirmação de senha corresponder à senha nova.
+
+### logout(void)
+Faz logout do usuário do sistema.
+
+### get_password(username)
+Invoca a função get_info com o parâmetro username.
+
+### hash_pw(password)
+Criptografa a senha do usuário.
+
