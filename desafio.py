@@ -1,3 +1,5 @@
-def desafio1(n):
-    #return 0
-    return n
+"""Arquivo a ser enviado ao sistema"""
+
+def desafio1(number):
+    """Função que retorna o valor entrado"""
+    return number
