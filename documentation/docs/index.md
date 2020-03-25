@@ -1,8 +1,7 @@
-# Welcome to MkDocs
+# Diga olá ao Servidor de Desafios
+Conheça mais no [Insper](https://www.insper.edu.br).
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-## Commands
+## Commands mkdocs
 
 * `mkdocs new [dir-name]` - Create a new project.
 * `mkdocs serve` - Start the live-reloading docs server.
@@ -15,3 +14,14 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+
+
+## Começando
+
+Baixe o [repositório](https://github.com/franciol/Servidor_de_desafios) em sua máquina com Python;
+
+## Entendendo as funções
+
+::: my_library.my_module.my_class
+    rendering:
+      show_source: false
