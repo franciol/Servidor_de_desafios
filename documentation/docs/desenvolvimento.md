@@ -1,17 +1,27 @@
-# Manant lustrantem habere
+# Guia de Desenvolvimento
 
-## Aequora cum rogat armos clara arcana tuus
+## Configurando o ambiente de desenvolvimento
+### Instalando as dependências
+Instalar as seguintes bibliotecas python:
+> sqlite3 json hashlib flask
 
-Lorem markdownum, illa. Post neu Latinus fortior tamquam; tangeret, poterat
-credas viris; qui advolat, [virgaque](http://quam.net/penetrabit-ferebam.php).
-Rumpitque seque in arcus super habuit, ille undae Confremuere nobis. Tecum suis
-tamen numen amare ipse ait sex hoc praeter fistula
-[venantum](http://prius.io/innubila); res moderamen possit creber: deus.
+Instalar também o SQLite3 na máquina.
 
-Ceycis erat mutua optat. In flos sanguine Plura et mulcebant quid. Nymphae
-inmanis. Divamque mea repellit, animae sitimque mihi, eget nunc suis enim.
-Paterno Timoli et partim volucrem annos; secrevit
-[meae](http://agentissi.net/simul.aspx).
+
+## Instalando o software
+### Configurando O Banco de Dados
+Criar o Banco de Dados da aplicação:
+> sqlite3 quiz.db < quiz.sql
+
+### Rodando o servidor
+Rode o arquivo **softdes.py**;
+> python3 softdes.py
+
+Abra um navegador e siga para [este endereço](http://0.0.0.0:80)
+
+
+
+
 
 ## Accede fessi Leucothoen amplexa Megareus et cursum
 
