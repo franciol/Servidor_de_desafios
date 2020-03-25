@@ -1,31 +1,24 @@
-# Feritate et fulmina materque mediam
+# Guia de usuário para professores
 
-## Lyncidae coniunx inmedicabile iuga nymphae Iuppiter subitae
+Nesta página você encontrará um passo a passo de como adicionar novos usuários e novos desafios ao Servidor de Desafios.
 
-Lorem markdownum ulterius conlapsamque patet auctor tauro, quam turbae, facta in
-tergo concipit placido caedisque visa; Fame. Iter mediis damnasse, temeraria
-tantum de muta herbae, homines fugit. Data iam Rhodopen tellus patet; iecit
-caelum aquis, non aquarum placido sacrataque arva ut. Vidi sinunt [reparabile
-illo blanda](http://superatus-tereus.org/in) tamen tangere votis ignotosque ego
-fortes, testatos: sibi Pandioniae. Italico montibus
-[magno](http://quidorbem.io/edidit-undis).
+## Adicionando usuários
 
-    cybercrimeInterface(dataPageQwerty);
-    if (icq(-2, -4)) {
-        fontVaporware = pmu;
-        mediaRate.protocolDuplex.phishing_correction(-1,
-                activeHeap.jre_wildcard(monitorSoPeopleware), delete + xp);
-        cmos = restoreNanometerBot;
-    }
-    pcb += degaussAddressRisc.quad_link_opacity(miniAddressClient.web_saas(
-            onlyDac.computer_capacity_node(syntaxBoot, sequenceSocketTrim)),
-            nosql_boot);
+- Para adicionar um novo usuário ao Servidor de Desafios será necessário abrir o arquivo _users.csv_ em um editor de texto e escrever o login do usuário, a senha e o tipo do usuário.
+	- Os tipos de usuário possíveis são "admin", para usuários que podem fazer qualquer tipo de ação no Servidor de Desafios (como professores) e "aluno" para usuários que tem suas ações restringidas no Servidor de Desafios (como alunos).
+	- Essas três informações devem estar na mesma linha e devem ser separadas por vírgulas, como mostra a imagem abaixo.
 
-Fecitque erat tuearis est maeonis postulat et ictu repagula penetrabile in inde
-cura visa reducunt erubuit. Vastatoremque latis fabricator, Cinyrae corpora
-iussa. Acheloe Iuno.
+![printcsv](imgs/new_user_csv.png)
 
-## Ait orbis est quod nympham
+- Será necessário abrir um terminal na pasta onde se encontram os arquivos do Servidor de Desafios e executar o arquivo _adduser.py_
+
+    **``python3 adduser.py``**
+
+O output esperado está na imagem abaixo.
+
+![printadduser](imgs/new_user_terminal.png)
+
+## Adicionando desafios
 
 Totum dixit quis **corbe**, mavult Thaumantidos **suis canes** nostro ea senecta
 durum morer. *Quamvis* mentoque in imago. Et non Scythiae celare, viribus huius
