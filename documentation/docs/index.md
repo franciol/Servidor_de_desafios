@@ -19,3 +19,10 @@ Conheça mais no [Insper](https://www.insper.edu.br).
 ## Começando
 
 Baixe o [repositório](https://github.com/franciol/Servidor_de_desafios) em sua máquina com Python;
+
+## Entendendo as funções
+# Reference
+
+::: my_library.my_module.my_class
+    rendering:
+      show_source: false
