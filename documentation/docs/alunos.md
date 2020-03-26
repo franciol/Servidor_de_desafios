@@ -2,7 +2,7 @@
 
 ## Entrando no Servidor de Desafios
 
-- Para preparar o ambiente e executar o Servidor de Desafios, veja este [tutorial](/desenvolvimento/ "tutorial").
+- Para preparar o ambiente e executar o Servidor de Desafios, veja este [tutorial](desenvolvimento.md "tutorial").
 - Após entrar na página do Servidor de Desafios, uma janela pop-up aparecerá e nela você deverá inserir o seu nome de usuário e a sua senha, como mostra a imagem abaixo, e clicar no botão "Sign in".
 
 ![printlogin](imgs/login.png)
