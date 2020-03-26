@@ -9,13 +9,13 @@ Na imagem abaixo há um exemplo do funcionamento da plataforma.
 
 ## Primeiros passos
 
-Para começar a utilizar o Servidor de Desafios, baixe [este repositório](https://github.com/franciol/Servidor_de_desafios) em sua máquina com Python e siga o tutorial que se encontra na seção [Guia de Desenvolvimento](documentation/docs/desenvolvimento/);
+Para começar a utilizar o Servidor de Desafios, baixe [este repositório](https://github.com/franciol/Servidor_de_desafios) em sua máquina com Python e siga o tutorial que se encontra na seção [Guia de Desenvolvimento](/desenvolvimento/);
 
 ## Professores
-[Neste link](documentation/docs/professores/) você que é professor encontrará um tutorial de como criar usuários e adicionar desafios na plataforma. 
+[Neste link](/professores/) você que é professor encontrará um tutorial de como criar usuários e adicionar desafios na plataforma. 
 
 ## Alunos
-[Neste link](documentation/docs/alunos/) você que é aluno encontrará um tutorial de como logar na plataforma e como submeter suas soluções e interpretar seus feedbacks.
+[Neste link](/alunos/) você que é aluno encontrará um tutorial de como logar na plataforma e como submeter suas soluções e interpretar seus feedbacks.
 
 ## API
-[Neste link](documentation/docs/api/) você encontrará uma documentação da API do software.
+[Neste link](/api/) você encontrará uma documentação da API do software.
