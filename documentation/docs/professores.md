@@ -20,21 +20,24 @@ O output esperado está na imagem abaixo.
 
 ## Adicionando desafios
 
-- Para adicionar um novo desafio ao Servidor de Desafios será necessário adicionar no banco de dados através do terminal.
-    Abrir o terminal no diretório do Servidor de Desafios e executar o seguinte comando
+Para adicionar um novo desafio ao Servidor de Desafios será necessário adiciona-lo no banco de dados através do terminal.
 
-    **``sqlite3 quiz.db``**
+- Para isso, abra o terminal no diretório do Servidor de Desafios e execute o comando a seguir:
 
-    Como está na imagem abaixo
+**``sqlite3 quiz.db``**
+
+Como mostra a imagem abaixo.
 
 ![terminalsqlite3](imgs/sqlite3_open_terminal.png)
 
 
-No terminal SQLite3, executar o seguinte comando
+- Em seguida, no terminal SQLite3, execute o comando abaixo.
 
-**```Insert into QUIZ(numb, release, expire, problem, tests, results, diagnosis) values ([ numero ], [Data de Inicio],[Data de Expiração],[Exemplo do problema],[Entradas de Teste],[Resultado Esperado],[Diagnóstico para cada entrada]);```**
+```mysql
+Insert into QUIZ(numb, release, expire, problem, tests, results, diagnosis) values ([ numero ], [Data de Inicio],[Data de Expiração],[Exemplo do problema],[Entradas de Teste],[Resultado Esperado],[Diagnóstico para cada entrada]);
+```
 
-Como no exemplo abaixo
+Como está exemplificado na imagem abaixo.
 
 ![adicionardesafio](imgs/adicionar_desafio.png)
 

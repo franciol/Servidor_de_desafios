@@ -1,27 +1,21 @@
-# Diga olá ao Servidor de Desafios
-Conheça mais no [Insper](https://www.insper.edu.br).
+# Servidor de Desafios
+O Servidor de Desafios foi criado com o objetivo de ser uma plataforma de apoio para a disciplina de Design de Software, ministrada no primeiro semestre dos cursos de Engenharia do Insper, em São Paulo/SP.
 
-## Commands mkdocs
+Nela os professores da disciplina podem colocar desafios para que os alunos loguem na plataforma, submetam as suas soluções e confiram se a solução está correta ou não, pois a plataforma fornece um feedback da solução enviada de forma automatizada.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Na imagem abaixo há um exemplo do funcionamento da plataforma.
 
-## Project layout
+![printcorreta](imgs/solucao_correta.png)
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Primeiros passos
 
+Para começar a utilizar o Servidor de Desafios, baixe [este repositório](https://github.com/franciol/Servidor_de_desafios) em sua máquina com Python e siga o tutorial que se encontra na seção [Guia de Desenvolvimento](/desenvolvimento/);
 
-## Começando
+## Professores
+[Neste link](/professores/) você que é professor encontrará um tutorial de como criar usuários e adicionar desafios na plataforma. 
 
-Baixe o [repositório](https://github.com/franciol/Servidor_de_desafios) em sua máquina com Python;
+## Alunos
+[Neste link](/alunos/) você que é aluno encontrará um tutorial de como logar na plataforma e como submeter suas soluções e interpretar seus feedbacks.
 
-## Entendendo as funções
-
-::: my_library.my_module.my_class
-    rendering:
-      show_source: false
+## API
+[Neste link](/api/) você encontrará uma documentação da API do software.
