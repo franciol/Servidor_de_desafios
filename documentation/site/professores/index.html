@@ -85,17 +85,13 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#feritate-et-fulmina-materque-mediam" class="nav-link">Feritate et fulmina materque mediam</a>
+            <li class="nav-item" data-level="1"><a href="#guia-de-usuario-para-professores" class="nav-link">Guia de usuário para professores</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-level="2"><a href="#lyncidae-coniunx-inmedicabile-iuga-nymphae-iuppiter-subitae" class="nav-link">Lyncidae coniunx inmedicabile iuga nymphae Iuppiter subitae</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-level="2"><a href="#ait-orbis-est-quod-nympham" class="nav-link">Ait orbis est quod nympham</a>
+            <li class="nav-item" data-level="2"><a href="#adicionando-usuarios" class="nav-link">Adicionando usuários</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-level="2"><a href="#sequentia-tamen-in-supplex-avem-sulcavitque-parvo" class="nav-link">Sequentia tamen in supplex avem sulcavitque parvo</a>
+            <li class="nav-item" data-level="2"><a href="#adicionando-desafios" class="nav-link">Adicionando desafios</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -106,69 +102,41 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="feritate-et-fulmina-materque-mediam">Feritate et fulmina materque mediam</h1>
-<h2 id="lyncidae-coniunx-inmedicabile-iuga-nymphae-iuppiter-subitae">Lyncidae coniunx inmedicabile iuga nymphae Iuppiter subitae</h2>
-<p>Lorem markdownum ulterius conlapsamque patet auctor tauro, quam turbae, facta in
-tergo concipit placido caedisque visa; Fame. Iter mediis damnasse, temeraria
-tantum de muta herbae, homines fugit. Data iam Rhodopen tellus patet; iecit
-caelum aquis, non aquarum placido sacrataque arva ut. Vidi sinunt <a href="http://superatus-tereus.org/in">reparabile
-illo blanda</a> tamen tangere votis ignotosque ego
-fortes, testatos: sibi Pandioniae. Italico montibus
-<a href="http://quidorbem.io/edidit-undis">magno</a>.</p>
-<pre><code>cybercrimeInterface(dataPageQwerty);
-if (icq(-2, -4)) {
-    fontVaporware = pmu;
-    mediaRate.protocolDuplex.phishing_correction(-1,
-            activeHeap.jre_wildcard(monitorSoPeopleware), delete + xp);
-    cmos = restoreNanometerBot;
-}
-pcb += degaussAddressRisc.quad_link_opacity(miniAddressClient.web_saas(
-        onlyDac.computer_capacity_node(syntaxBoot, sequenceSocketTrim)),
-        nosql_boot);
+<h1 id="guia-de-usuario-para-professores">Guia de usuário para professores</h1>
+<p>Nesta página você encontrará um passo a passo de como adicionar novos usuários e novos desafios ao Servidor de Desafios.</p>
+<h2 id="adicionando-usuarios">Adicionando usuários</h2>
+<ul>
+<li>Para adicionar um novo usuário ao Servidor de Desafios será necessário abrir o arquivo <em>users.csv</em> em um editor de texto e escrever o login do usuário, a senha e o tipo do usuário.<ul>
+<li>Os tipos de usuário possíveis são "admin", para usuários que podem fazer qualquer tipo de ação no Servidor de Desafios (como professores) e "aluno" para usuários que tem suas ações restringidas no Servidor de Desafios (como alunos).</li>
+<li>Essas três informações devem estar na mesma linha e devem ser separadas por vírgulas, como mostra a imagem abaixo.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="printcsv" src="../imgs/new_user_csv.png" /></p>
+<ul>
+<li>
+<p>Será necessário abrir um terminal na pasta onde se encontram os arquivos do Servidor de Desafios e executar o arquivo <em>adduser.py</em></p>
+<p><strong><code>python3 adduser.py</code></strong></p>
+</li>
+</ul>
+<p>O output esperado está na imagem abaixo.</p>
+<p><img alt="printadduser" src="../imgs/new_user_terminal.png" /></p>
+<h2 id="adicionando-desafios">Adicionando desafios</h2>
+<p>Para adicionar um novo desafio ao Servidor de Desafios será necessário adiciona-lo no banco de dados através do terminal.</p>
+<ul>
+<li>Para isso, abra o terminal no diretório do Servidor de Desafios e execute o comando a seguir:</li>
+</ul>
+<p><strong><code>sqlite3 quiz.db</code></strong></p>
+<p>Como mostra a imagem abaixo.</p>
+<p><img alt="terminalsqlite3" src="../imgs/sqlite3_open_terminal.png" /></p>
+<ul>
+<li>Em seguida, no terminal SQLite3, execute o comando abaixo.</li>
+</ul>
+<pre><code class="mysql">Insert into QUIZ(numb, release, expire, problem, tests, results, diagnosis) values ([ numero ], [Data de Inicio],[Data de Expiração],[Exemplo do problema],[Entradas de Teste],[Resultado Esperado],[Diagnóstico para cada entrada]);
 </code></pre>
-<p>Fecitque erat tuearis est maeonis postulat et ictu repagula penetrabile in inde
-cura visa reducunt erubuit. Vastatoremque latis fabricator, Cinyrae corpora
-iussa. Acheloe Iuno.</p>
-<h2 id="ait-orbis-est-quod-nympham">Ait orbis est quod nympham</h2>
-<p>Totum dixit quis <strong>corbe</strong>, mavult Thaumantidos <strong>suis canes</strong> nostro ea senecta
-durum morer. <em>Quamvis</em> mentoque in imago. Et non Scythiae celare, viribus huius
-ruunt venis, per sed esse.</p>
-<pre><code>if (diskCellConfiguration &lt; offline_mp(goodput, method_digital_isp, -4)) {
-    sms_fat_ddr += fileBaud;
-    icf_agp_web += leaf_software_flat;
-}
-metafileUserDigital += state(cmsProgram, open_teraflops_raid);
-friendly -= denial_scroll_export(videoDramCircuit, panel_language(
-        speakersKilobit, gpu_soft_ccd + middlewareWhoisHdtv), soft);
-if (runtime_hyperlink(dvdBitMarkup) + mamp - dhcp_supply) {
-    dvd = 1 - 2 - schemaWi + isoFlashCc;
-    functionFileMysql(cpuIphoneDial, contextual);
-}
-gigo_read.non /= tokenDvd;
-</code></pre>
-<p>Domestica se nec undas numquam; singultantem nocte vocibus retia, humus inque
-mundus Pasiphaen da caput ait Agamemnonis? Maturus precibus, reges, eras est te
-dignus arcum <a href="http://quo.org/">solvit</a> dextra, et super quid sed quod. Invidit
-natas dum et?</p>
-<h2 id="sequentia-tamen-in-supplex-avem-sulcavitque-parvo">Sequentia tamen in supplex avem sulcavitque parvo</h2>
-<p><strong>Moresque pronuba fuit</strong>, exspectatoque relevat magnae ut armis quis pectora;
-visa non. <a href="http://sermo.io/">Usus deus</a> auras tumulo <em>tutaeque calcata</em>! Petitos
-nomine et, ad queri cupidine ut sed.</p>
-<blockquote>
-<p>Supplice votis, relicta <a href="http://fecisse.org/">quam</a> Plurima viridique invida
-resilit frater; fortemque oculisque. Fiunt volucresque pennis ab squamas bonis
-vati iter plangor durum intremuere! Et <strong>vicit puniceo</strong> ventre volui quae
-Lycopen calidusque habebat deae. Maius de undas <strong>lumine variis</strong>, sed in
-<em>temerasse positisque longa</em>. Maestus in qualem etiam, pudore ait pronuba:
-neque enixa.</p>
-</blockquote>
-<p>Addidit orbe nova manet <em>Veneri in</em> et peregrina satus, et reddere Eumenidum
-poena spumantiaque nata <a href="http://www.domustemptemus.com/manet-ambitione">diu</a> deo
-ter. Solet carpsere poena <a href="http://www.pergus.org/ministrat">filia</a>, et excussit,
-nunc esse <strong>ponere quae</strong> supersunt hunc. Et longa orba cremarat proque sed, nec
-sex canis mihi aliis per: et gestamina murice. Aut quid damna <strong>longam</strong> sorte
-cepi et palus recepto non facit <a href="http://inductae.com/">euntes</a>. Perseus et
-relicta canes silvis barba: est fores expalluit.</p></div>
+
+<p>Como está exemplificado na imagem abaixo.</p>
+<p><img alt="adicionardesafio" src="../imgs/adicionar_desafio.png" /></p></div>
             </div>
         </div>
 
