@@ -1,47 +1,31 @@
-# Novata Alcyone
+# Guia de usuário para alunos
 
-## Scopulus aethera terra
+## Entrando no Servidor de Desafios
 
-Lorem markdownum mare. Ad dumque in invidia **ferox**. Pectore quas sed qualem
-in populos Aeolidis est altera agitque, *pectora fera* umeris! Litora digiti tam
-cunctisque amantis, te conlegerat retro caelestia plebe circinat remansit amor
-protegit pacis commemorare fugias, dictis.
+- Para preparar o ambiente e executar o Servidor de Desafios, veja este [tutorial](/desenvolvimento/ "tutorial").
+- Após entrar na página do Servidor de Desafios, uma janela pop-up aparecerá e nela você deverá inserir o seu nome de usuário e a sua senha, como mostra a imagem abaixo, e clicar no botão "Sign in".
 
-Est aliquid non pavidus cum! Lenis concresse eris evomit soporem centum, non
-fateor territaque Phoebi ducar fecerat. Avidae nomen hoc pedibus forte anhelitus
-quid feroxque stipite da omnes et montis rogat. Caesosque erat ortus ipso
-Numidasque potius totoque crimina: luce post agmen cepit instat.
+![printlogin](imgs/login.png)
 
-- Scis cui spesque inminet sit dedit hoc
-- Sic fumo membra
-- Boeotaque incidit pendens
+- Pronto, você está logado na página do Servidor de Desafios e já pode começar suas atividades.
 
-## Cum fuit unam mota Pylius
 
-Qui nec esset per servatusque, **quam** nuda, dei iste da Ulixes foret,
-velaturque terras dixit. Obituque nec victor magnum dicit falce laetusque
-pecudes [excipit](http://www.tulit-aurum.org/perrhaebum.html), totidemque
-coniectum erubuit aureus [sui](http://vocat.io/gratiafrustra): stridit.
+## Enviando solução correta para desafio
 
-Terras per, sunt magni aper sim habet. Alto virtus: ille ducibusque odium,
-capulo arae solis nitidum; non. Vocant orbem pastor meritasque sibi, sed arbor
-per diffundi Hecate.
+- Após logar com seu usuário e senha na página do Servidor de Desafios, clique no desafio que você quer enviar a solução no menu do lado esquedo da página.
+- Clique no botão "Choose file", escolha o arquivo com a sua solução do desafio e clique em "Abrir", como mostram as imagens abaixo.
 
-Est et inmunis sustinet luminis aetatem forma esse undas paelicis miseratus,
-eripuisse Dictaeo colebat genibusque. Saturnia in iter carmina cognitus fulmina
-*fleverunt* damus hirta cur ab, qui ante quid.
+![printchoosefile](imgs/choose_file.png)
 
-## Possit sermone venerat suis
+![printfile](imgs/file.png)
 
-Magis surgentibus Somni terga remorata commota aestuque genuisse a verba regia
-est incipit decoris concrescere. Vetuere abit caput Phoebe satyri, cum esse
-*subiectatque* nitidis esse. Oris nec adeunt, solemus mortalibus in illis.
-Eiecit cuncta genetrix. Nisi aere, Macareus pectore lacessas tamen sub
-miserabilis minimo flumen, vigilantibus arce Talibus.
+- Ao clicar no botão "Enviar", você poderá verificar na seção "Envios" o seu feedback e o resultado da sua solução. Caso o resultado seja "OK!" e o feedback seja "Sem erros." a sua solução está correta, como mostra a imagem abaixo.
 
-Erat effugit secum tandem nunc, conlapsamque unda et, tua vexant inplebat
-[pennis](http://eodem-viva.org/vagantesvirgo), Quid. Dum forte stabam, corpus
-non servabitur nulloque lumen, parentem colla sit quoque solantia. Nitido nec
-vacuum fluminis ipse premit adiere comis; tectus suis?
+![printcorreta](imgs/solucao_correta.png) 
 
-Me qui delapsaque litore. Pennas quam comites exanimi.
+## Enviando solução errada para desafio
+
+- Caso ao clicar no botão "Enviar" aparecer outro resultado nos campos "Feedback" e "Resultado" da seção "Envios", significa que a sua solução está incorreta ou parcialmente correta. A imagem abaixo exemplifica esta situação.
+
+![printerrada](imgs/solucao_errada.png)
+
