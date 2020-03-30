@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>API - Servidor de Desafios</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <link href="../custom.css" rel="stylesheet">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Servidor de Desafios</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../alunos/" class="nav-link">Aluno</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../professores/" class="nav-link">Professor</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../desenvolvimento/" class="nav-link">Guia de Desenvolvimento</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">API</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../desenvolvimento/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#servidor-de-desafios-api" class="nav-link">Servidor de Desafios API</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="servidor-de-desafios-api">Servidor de Desafios API</h1>
+<h4 id="adduserpy">adduser.py</h4>
+<p>Adiciona um novo usuário ao banco de dados <em>quiz.db</em> para cada usuário no arquivo <em>users.csv</em>.</p>
+<p><code>add_user(user, pwd, tipe)</code> -
+Adiciona um novo usuário ao <em>quiz.db</em>, faz commit das mudanças e fecha a conexão.</p>
+<h4 id="desafiopy">desafio.py</h4>
+<p>Arquivo a ser enviado ao sistema.</p>
+<p><code>desafio1(number)</code> - 
+Função que retorna o valor encontrado.</p>
+<h4 id="softdespy">softdes.py</h4>
+<p>Software desenvolvido pelo professor Raul Ikeda para a disciplina Design de Software como servidor de desafios. Considere este o algoritmo Python principal do Servidor de Desafios. 
+Abaixo estão listadas as funções disponíveis.</p>
+<p><code>lambda_handler(event, context)</code> - 
+Lida com o lambda. Dentro dela, há a função <code>not_equals(first, second)</code> que é utilizada para lidar com o lambda. Em condições normais de temperatura e pressão, você não deve utilizar esta função explicitamente.</p>
+<p><code>converteData(orig)</code> - 
+Função de conversão de datas para tradução. Em condições normais de temperatura e pressão, você não deve utilizar esta função explicitamente.</p>
+<p><code>get_quizer(user)</code> - 
+Pega todos os quizes de um usuário específico.</p>
+<p><code>get_user_quiz(user_id, quiz_id)</code> - 
+Pega um quiz específico de um usuário específico.</p>
+<p><code>set_user_quiz(userid, quizid, sent, answer, result)</code> - 
+Insere no banco de dados a solução enviada por um usuário para um quiz. </p>
+<p><code>get_quiz(id, user)</code> - 
+Pega o quiz de um usuário no banco de dados.</p>
+<p><code>set_info(pwd, user)</code> - 
+Estabelece ou atualiza a senha de login de um usuário no banco de dados.</p>
+<p><code>get_info(user)</code> - 
+Mostra os dados de um usuário que está no banco de dados.</p>
+<p><code>change(void)</code> - 
+Altera a senha de um usuário, solicitando a senha antiga, a senha nova e uma confirmação da senha nova. Realiza a alteração apenas se a senha antiga for correta e se a confirmação de senha corresponder à senha nova.</p>
+<p><code>logout(void)</code> - 
+Faz logout do usuário do sistema.</p>
+<p><code>get_password(username)</code> - 
+Invoca a função <code>get_info</code> com o parâmetro username.</p>
+<p><code>hash_pw(password)</code> - 
+Criptografa a senha do usuário.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
