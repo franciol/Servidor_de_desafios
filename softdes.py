@@ -46,15 +46,6 @@ def lambda_handler(event, context):
     except:
         return "Função inválida."
 
-def test_invalid():
-    assert lambda_handler(None, None) == 'Função inválida.'
-    
-def test_assert():
-    assert lambda_handler({'ndes': 1,'code': 'desafio1(number): return 0','args': 1, 'resp': None,'diag': None}, {}) == 'Função inválida.'
-
-def test_dic():
-    assert lambda_handler({'ndes': 1,'code': 'desafio1(number): return 0','args': 1, 'resp': None,'diag': None}, {}) == []
-
 
 def converteData(orig):
     """Convert Data"""
