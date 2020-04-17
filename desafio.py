@@ -2,4 +2,4 @@
 
 def desafio1(number):
     """Função que retorna o valor entrado"""
-    return 0
+    return number
